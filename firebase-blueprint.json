@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "product": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "longDescription": "string?",
+      "price": "number",
+      "originalPrice": "number?",
+      "image": "string",
+      "category": "string",
+      "badge": "string?",
+      "rating": "number?",
+      "ratingCount": "number?",
+      "sizes": "array?",
+      "toppings": "array?",
+      "recipeId": "string?"
+    },
+    "recipe": {
+      "id": "string",
+      "name": "string",
+      "image": "string",
+      "ingredients": "array",
+      "packagingCost": "number",
+      "utilityCost": "number",
+      "yieldQty": "number",
+      "targetMargin": "number",
+      "lastUpdated": "string"
+    },
+    "order": {
+      "id": "string",
+      "customerName": "string",
+      "phone": "string",
+      "address": "string",
+      "notes": "string?",
+      "items": "array",
+      "subtotal": "number",
+      "shippingFee": "number",
+      "discount": "number",
+      "total": "number",
+      "status": "string",
+      "paymentMethod": "string",
+      "proofUrl": "string?",
+      "resiNumber": "string?",
+      "createdAt": "string"
+    }
+  },
+  "firestore": {
+    "products": {
+      "entity": "product"
+    },
+    "recipes": {
+      "entity": "recipe"
+    },
+    "orders": {
+      "entity": "order"
+    }
+  }
+}

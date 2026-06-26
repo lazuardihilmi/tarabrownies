@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fredoka", sans-serif;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff1ec;
+  --color-surface-container: #ffe9e1;
+  --color-surface-container-high: #ffe2d7;
+  --color-surface-container-highest: #fcdccf;
+  --color-surface-dim: #f3d4c7;
+  --color-surface-bright: #fff8f6;
+  --color-surface: #fff8f6;
+  --color-on-surface: #281810;
+  --color-on-surface-variant: #504444;
+  
+  --color-primary: #170506;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #321b1b;
+  --color-on-primary-container: #a38080;
+  
+  --color-secondary: #9c4500;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ff8434;
+  --color-on-secondary-container: #652a00;
+  
+  --color-mint-accent: #a9e0dc;
+  --color-butter-yellow: #ffe12b;
+  --color-border-line: rgba(50, 27, 27, 0.14);
+}
+
+.tactile-button {
+  position: relative;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 0 6px 0 0 #321b1b;
+  border: 2px solid #321b1b;
+}
+
+.tactile-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 #321b1b;
+}
+
+.glass-pill {
+  background: rgba(255, 248, 246, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(50, 27, 27, 0.1);
+}
+
+.soft-shadow {
+  box-shadow: 0 16px 40px rgba(50, 27, 27, 0.08);
+}
+
+.looming-shadow {
+  box-shadow: 0 24px 60px rgba(50, 27, 27, 0.12);
+}
